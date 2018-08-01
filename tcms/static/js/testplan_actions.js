@@ -853,7 +853,7 @@ Nitrate.TestPlans.SearchCase.on_load = function() {
   }
   // new feature for searching by case id.
   var quick_search = jQ("#tp_quick_search_cases_form");
-  var normal_search = jQ("#tp_advanced_search_case_form");
+  var normal_search = jQ("#tp_normal_search_case_form");
   var quick_tab = jQ("#quick_tab");
   var normal_tab = jQ("#normal_tab");
   var search_mode = jQ("#search_mode");
@@ -876,7 +876,7 @@ Nitrate.TestPlans.SearchCase.on_load = function() {
       "hide_tab": normal_tab
     });
   });
-  jQ("#advanced_search_cases").bind("click", function() {
+  jQ("#normal_search_cases").bind("click", function() {
     // clear errors
     errors.empty();
     search_mode.val("normal");
